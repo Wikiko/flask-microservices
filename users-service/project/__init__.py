@@ -6,7 +6,6 @@ import datetime
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
-
 # instantiate the app
 app = Flask(__name__)
 
@@ -16,6 +15,7 @@ app.config.from_object(app_settings)
 
 # instantiate the db
 db = SQLAlchemy(app)
+
 
 # model
 class User(db.Model):
